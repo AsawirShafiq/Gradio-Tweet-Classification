@@ -24,3 +24,28 @@ This project focuses on classifying tweets using Natural Language Processing (NL
 - **What It Does:** The user interface is built using Gradio, enabling users to interact with the tweet classification model directly through a web interface.
 - **Why It’s Used:** Gradio provides a simple yet powerful platform for creating interactive machine learning demos, making it easy for users to input tweets and receive classification results.
 - **How It Works:** Users input tweet text into the Gradio interface, which then sends the data to the backend for processing. The classification results are displayed in real-time, allowing users to analyze the outcomes instantly.
+
+## Installation and Setup
+
+### 1. **Clone the Repository**
+```bash
+git clone https://github.com/AsawirShafiq/Gradio-Tweet-Classification.git
+cd Gradio-Tweet-classification
+```
+### 2. **Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+### 3. **Set up MongoDB**
+- Ensure MongoDB is installed and running on your machine.
+- Configure the connection settings in the project’s configuration file.
+### 4. **Run the FastAPI Backend**
+```bash
+uvicorn main:app --reload
+```
+### 5. **Launch the Gradio Interface**
+```bash
+python interface.py
+```
+
+
